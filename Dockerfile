@@ -8,6 +8,7 @@ RUN npm i
 
 COPY . .
 
+ENV VIRTUAL_HOST=strapi.brunavaltrick.com.br
 ENV NODE_ENV production
 
 RUN npm run build

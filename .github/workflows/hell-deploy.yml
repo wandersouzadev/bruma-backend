@@ -1,0 +1,19 @@
+name: Trigger deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Trigger deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deploy
+        run: |
+          git clone https://${{ secrets.CLONE_TOKEN }}@github.com/pedroni/hell-server.git .
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m 'Trigger deploy from ${{ github.repository }}' --allow-empty
+          git push

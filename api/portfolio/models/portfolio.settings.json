@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "portfolios",
   "info": {
-    "name": "Portfólio"
+    "name": "Portfólio",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -40,7 +41,7 @@
     },
     "category": {
       "model": "category",
-      "via": "portfolio"
+      "via": "portfolios"
     }
   }
 }

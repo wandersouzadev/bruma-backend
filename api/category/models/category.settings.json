@@ -20,9 +20,9 @@
       "targetField": "name",
       "required": true
     },
-    "portfolio": {
+    "portfolios": {
       "via": "category",
-      "model": "portfolio"
+      "collection": "portfolio"
     }
   }
 }

@@ -3,7 +3,8 @@
   "collectionName": "blog_posts",
   "info": {
     "name": "Blog Post",
-    "description": ""
+    "description": "",
+    "displayName": "Postagens no blog"
   },
   "options": {
     "increments": true,

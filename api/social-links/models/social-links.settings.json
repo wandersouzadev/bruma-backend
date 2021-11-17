@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_links",
+  "info": {
+    "name": "Redes Sociais",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "facebook": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social",
+      "required": true
+    },
+    "instagram": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social",
+      "required": true
+    },
+    "linkedin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social",
+      "required": true
+    },
+    "medium": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "social.social"
+    },
+    "whatsapp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social",
+      "required": true
+    },
+    "email": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social"
+    }
+  }
+}

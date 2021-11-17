@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/journalistic-page",
+      "handler": "journalistic-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/journalistic-page",
+      "handler": "journalistic-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/journalistic-page",
+      "handler": "journalistic-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

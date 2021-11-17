@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "portfolios",
   "info": {
-    "name": "Portfólio",
+    "name": "Posts de Portfólio",
     "description": ""
   },
   "options": {
@@ -40,8 +40,18 @@
       "required": true
     },
     "category": {
-      "model": "category",
-      "via": "portfolios"
+      "via": "portfolios",
+      "model": "category"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "customer": {
+      "via": "posts_de_portfolios",
+      "model": "customer"
     }
   }
 }

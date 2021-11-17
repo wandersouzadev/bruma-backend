@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professional_experiences",
+  "info": {
+    "name": "Experiências Profissionais",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "in": {
+      "type": "date",
+      "required": true
+    },
+    "out": {
+      "type": "date",
+      "required": true
+    },
+    "employer": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

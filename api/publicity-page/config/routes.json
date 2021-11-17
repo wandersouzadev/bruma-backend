@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/publicity-page",
+      "handler": "publicity-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/publicity-page",
+      "handler": "publicity-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/publicity-page",
+      "handler": "publicity-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "name": "SEO",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "keywords": {
+      "type": "string",
+      "required": true
+    },
+    "preventIndex": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

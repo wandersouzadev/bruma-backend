@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "customers",
   "info": {
-    "name": "Categorias de Portfólios",
+    "name": "Clientes",
     "description": ""
   },
   "options": {
@@ -16,13 +16,18 @@
       "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
-    "portfolios": {
-      "via": "category",
+    "posts_de_portfolios": {
+      "via": "customer",
       "collection": "portfolio"
     }
   }

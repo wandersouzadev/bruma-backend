@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "testimonials",
   "info": {
-    "name": "Categorias de Portfólios",
+    "name": "Depoimentos",
     "description": ""
   },
   "options": {
@@ -16,14 +16,19 @@
       "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
+    "message": {
+      "type": "text",
       "required": true
     },
-    "portfolios": {
-      "via": "category",
-      "collection": "portfolio"
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }

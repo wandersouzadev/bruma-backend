@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "blog_posts",
   "info": {
-    "name": "Blog Post",
+    "name": "Posts do Blog",
     "description": "",
     "displayName": "Postagens no blog"
   },
@@ -43,6 +43,12 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "blog_posts"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
     }
   }
 }

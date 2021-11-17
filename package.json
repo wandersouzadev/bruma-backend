@@ -6,10 +6,12 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
+    "build": "rimraf build && strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
   "dependencies": {
     "knex": "0.21.18",
     "mysql": "2.18.1",

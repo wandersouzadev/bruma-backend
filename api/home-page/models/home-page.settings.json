@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "journalistic_pages",
+  "collectionName": "home_pages",
   "info": {
-    "name": "Página Jornalistica",
+    "name": "Página Inicial",
     "description": ""
   },
   "options": {
@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "text": {
-      "type": "richtext",
-      "required": true
-    },
     "SEO": {
       "type": "component",
       "repeatable": false,

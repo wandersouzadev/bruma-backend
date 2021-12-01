@@ -8,10 +8,11 @@ RUN npm i
 
 COPY . .
 
-RUN npm run build
-
 ENV VIRTUAL_HOST=strapi.brunavaltrick.com.br
 ENV NODE_ENV production
+
+RUN npm run build
+
 
 # Cloudinary
 ENV CLOUDINARY_NAME=dhg1eek8g

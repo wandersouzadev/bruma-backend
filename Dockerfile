@@ -8,18 +8,10 @@ RUN npm i
 
 COPY . .
 
-ENV VIRTUAL_HOST=strapi.brunavaltrick.com.br
 ENV NODE_ENV production
 
 RUN npm run build
 
-
-# Cloudinary
-ENV CLOUDINARY_NAME=dhg1eek8g
-ENV CLOUDINARY_KEY=887136717356762
-ENV CLOUDINARY_SECRET=jSPdSZ8_caZE4czqVcQ_kvaMDv8
-ENV CLOUDINARY_FOLDER=bruma-strapi
-#
 
 EXPOSE 1337
 
